@@ -25,19 +25,18 @@ CREATE TABLE tb_usuarios (
 );
 /*****************/
 
+use solution;
 /***** CHAMADOS DOS USUARIOS E AGENTES *****/
 CREATE TABLE tb_chamados (
   id int auto_increment primary key,
   solicitante varchar(100),
   responsavel varchar (20),
   status_chamado varchar(50),
-  data_chamado varchar(15),
   urgencia varchar(20),
-  hora varchar(10),
   titulo varchar(200),
   descricao varchar(900),
   equipamento varchar(100),
-  setor varchar(100),
+  setor varchar(50),
   localizacao varchar(100)
 );
 /*****************/
@@ -70,9 +69,7 @@ CREATE TABLE tb_maquinas(
   localizacao varchar(100),
   setor varchar(100),
   ncm integer,
-  plano varchar(150),
-  garantia varchar(20)
-  
+  custo decimal(7,2)
 );
 /*****************/
 
@@ -91,15 +88,11 @@ CREATE TABLE tb_chamados_acoes(
   tempo_total varchar(10)
 );
 /*****************/
+use solution;
+select * from tb_chamados_acoes order by id desc;
 
-/***** INSERINDO A PRIMEIRA AÇÃO *****/
-INSERT INTO tb_chamados (solicitante, responsavel, status_chamado, data_chamado, urgencia, hora, titulo, descricao, equipamento, setor, localizacao) 
-VALUES ('Primeiro Chamado', 'Suporte', 'Cancelado', '27/04/2023', 'Alta', '20:42', 'Computador não liga', 'Tela Azul', 'Computador', 'Administrativo', 'Bloco A'); # Cancelado
-/*****************/
+select * from tb_cadastros_setor where id = 2;
 
-/***** INSERINDO O PRIMEIRO USUÁRIO *****/
-INSERT INTO tb_usuarios (nome, senha, email, perm1, perm2, perm3, perm4, perm5, perm6, perm7, perm8, perm9, perm10, perm11, perm12) 
-VALUES ('Administrador', '1234', 'Administrador@adm.com', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S');
-/*****************/
+SELECT * FROM tb_cadastros_local;
 
-select id AS Login, senha AS Senha from tb_usuarios;
+select id from tb_usuarios order by id desc limit 1
