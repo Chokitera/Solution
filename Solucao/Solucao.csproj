@@ -253,6 +253,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="views\Frmabrirchamados.resx">
       <DependentUpon>Frmabrirchamados.cs</DependentUpon>
@@ -304,6 +305,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="LogoSolucionIcon.ico" />
+    <None Include="resources\relatoriosolution.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

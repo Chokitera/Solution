@@ -409,15 +409,15 @@
             this.label9.ForeColor = System.Drawing.Color.DimGray;
             this.label9.Location = new System.Drawing.Point(123, 419);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(306, 27);
+            this.label9.Size = new System.Drawing.Size(278, 27);
             this.label9.TabIndex = 26;
-            this.label9.Text = "Acesso aos Relatórios";
+            this.label9.Text = "Acesso aos Usuários";
             // 
             // ckbAcessoUsuarios3
             // 
             this.ckbAcessoUsuarios3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ckbAcessoUsuarios3.AutoSize = true;
-            this.ckbAcessoUsuarios3.Location = new System.Drawing.Point(433, 424);
+            this.ckbAcessoUsuarios3.Location = new System.Drawing.Point(407, 424);
             this.ckbAcessoUsuarios3.MinimumSize = new System.Drawing.Size(45, 22);
             this.ckbAcessoUsuarios3.Name = "ckbAcessoUsuarios3";
             this.ckbAcessoUsuarios3.OffBackColor = System.Drawing.Color.Gray;
@@ -436,15 +436,15 @@
             this.label8.ForeColor = System.Drawing.Color.DimGray;
             this.label8.Location = new System.Drawing.Point(123, 381);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(250, 27);
+            this.label8.Size = new System.Drawing.Size(306, 27);
             this.label8.TabIndex = 24;
-            this.label8.Text = "Acesso ao Estoque";
+            this.label8.Text = "Acesso aos Relatórios";
             // 
             // ckbAcessoEstoque2
             // 
             this.ckbAcessoEstoque2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ckbAcessoEstoque2.AutoSize = true;
-            this.ckbAcessoEstoque2.Location = new System.Drawing.Point(379, 386);
+            this.ckbAcessoEstoque2.Location = new System.Drawing.Point(435, 386);
             this.ckbAcessoEstoque2.MinimumSize = new System.Drawing.Size(45, 22);
             this.ckbAcessoEstoque2.Name = "ckbAcessoEstoque2";
             this.ckbAcessoEstoque2.OffBackColor = System.Drawing.Color.Gray;
@@ -463,15 +463,15 @@
             this.label7.ForeColor = System.Drawing.Color.DimGray;
             this.label7.Location = new System.Drawing.Point(123, 343);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(264, 27);
+            this.label7.Size = new System.Drawing.Size(278, 27);
             this.label7.TabIndex = 22;
-            this.label7.Text = "Acesso ao Chamados";
+            this.label7.Text = "Acesso aos Chamados";
             // 
             // ckbAcessoChamados1
             // 
             this.ckbAcessoChamados1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ckbAcessoChamados1.AutoSize = true;
-            this.ckbAcessoChamados1.Location = new System.Drawing.Point(393, 348);
+            this.ckbAcessoChamados1.Location = new System.Drawing.Point(404, 348);
             this.ckbAcessoChamados1.MinimumSize = new System.Drawing.Size(45, 22);
             this.ckbAcessoChamados1.Name = "ckbAcessoChamados1";
             this.ckbAcessoChamados1.OffBackColor = System.Drawing.Color.Gray;
