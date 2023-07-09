@@ -272,7 +272,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(509, 386);
+            this.label14.Location = new System.Drawing.Point(509, 384);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(404, 27);
             this.label14.TabIndex = 36;
@@ -299,7 +299,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(509, 424);
+            this.label13.Location = new System.Drawing.Point(509, 422);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(390, 27);
             this.label13.TabIndex = 34;

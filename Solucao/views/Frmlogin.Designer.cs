@@ -44,6 +44,9 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tmrHorario = new System.Windows.Forms.Timer(this.components);
+            this.txtNomeUsuario = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.iconMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconFechar)).BeginInit();
             this.MenuVertical.SuspendLayout();
@@ -153,9 +156,9 @@
             this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
             this.txtUsuario.Location = new System.Drawing.Point(296, 89);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(462, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(60, 23);
             this.txtUsuario.TabIndex = 11;
-            this.txtUsuario.Text = "USUÁRIO";
+            this.txtUsuario.Text = "CÓD.";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
@@ -164,9 +167,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(296, 111);
+            this.panel2.Location = new System.Drawing.Point(380, 102);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(462, 1);
+            this.panel2.Size = new System.Drawing.Size(378, 10);
             this.panel2.TabIndex = 12;
             // 
             // panel3
@@ -215,6 +218,41 @@
             this.tmrHorario.Interval = 1000;
             this.tmrHorario.Tick += new System.EventHandler(this.tmrHorario_Tick);
             // 
+            // txtNomeUsuario
+            // 
+            this.txtNomeUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNomeUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomeUsuario.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNomeUsuario.Location = new System.Drawing.Point(380, 88);
+            this.txtNomeUsuario.Name = "txtNomeUsuario";
+            this.txtNomeUsuario.ReadOnly = true;
+            this.txtNomeUsuario.Size = new System.Drawing.Size(378, 23);
+            this.txtNomeUsuario.TabIndex = 16;
+            this.txtNomeUsuario.Text = "USUÁRIO";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox2.Location = new System.Drawing.Point(362, 88);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(15, 23);
+            this.textBox2.TabIndex = 17;
+            this.textBox2.Text = "-";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DimGray;
+            this.panel4.Enabled = false;
+            this.panel4.Location = new System.Drawing.Point(296, 111);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(59, 1);
+            this.panel4.TabIndex = 18;
+            // 
             // Frmlogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -222,6 +260,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 330);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNomeUsuario);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtSenha);
@@ -264,5 +305,8 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Timer tmrHorario;
+        private System.Windows.Forms.TextBox txtNomeUsuario;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -59,5 +59,34 @@ namespace Solucao.dao
         }
 
         #endregion
+
+        #region Método para Consultar o Nome de Usuario pelo Id
+        public string ConsultaNomeUsuario(int id)
+        {
+            try
+            {
+                //Sql
+                string sql = @"select * from tb_usuarios where id = @id";
+
+                MySqlCommand executacmd = new MySqlCommand(sql, conexao);
+                executacmd.Parameters.AddWithValue("@id", id);
+
+                conexao.Open();
+                MySqlDataReader reader = executacmd.ExecuteReader();
+                reader.Read();
+
+                //Retornar o nome do usuário logado
+                string saida = reader.GetString("nome");
+                conexao.Close();
+                return saida;
+            }
+            catch (Exception)
+            {
+                conexao.Close();
+                return "";
+            }
+        }
+
+        #endregion
     }
 }

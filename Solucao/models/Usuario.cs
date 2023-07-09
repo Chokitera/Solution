@@ -28,7 +28,6 @@ namespace Solucao.models
         public string parametro8 { get; set; }
         public string parametro9 { get; set; }
         public string parametro10 { get; set; }
-
         public string parametro11 { get; set; }
         public string parametro12 { get; set; }
     }

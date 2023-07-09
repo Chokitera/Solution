@@ -85,7 +85,7 @@ namespace Solucao.views
         #region Visual dos TextBox Usuário e Senha
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "USUÁRIO")
+            if(txtUsuario.Text == "CÓD.")
             {
                 txtUsuario.Text = "";
                 txtUsuario.ForeColor = Color.FromArgb(28,28,28);
@@ -94,10 +94,29 @@ namespace Solucao.views
 
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
+            LoginDAO loginDAO = new LoginDAO();
             if(txtUsuario.Text == "")
             {
-                txtUsuario.Text = "USUÁRIO";
+                txtNomeUsuario.Text = "USUÁRIO";
+                txtUsuario.Text = "CÓD.";
                 txtUsuario.ForeColor = Color.DimGray;
+            }
+
+            //Adiciona o nome do Usuário em "Usuário"
+            if(txtUsuario.Text != "CÓD." && txtUsuario.Text != "")
+            {
+                string nomeUsuario = "";
+                if(int.Parse(txtUsuario.Text) > 0)
+                    nomeUsuario = loginDAO.ConsultaNomeUsuario(int.Parse(txtUsuario.Text));
+
+                if (nomeUsuario == "")
+                {
+                    txtNomeUsuario.Text = "USUÁRIO";
+                    MessageBox.Show("Nome de Usuário inexistente!", "Solution", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtUsuario.Focus();
+                }
+                else
+                    txtNomeUsuario.Text = nomeUsuario;
             }
         }
 
@@ -136,7 +155,7 @@ namespace Solucao.views
                 LoginDAO dao = new LoginDAO();
                 if (dao.EfetuarLogin(obj))
                 {
-                    //Levar o email ao método UsuarioLogado
+                    //Levar os dados do usuário ao método UsuarioLogado
                     Form1 frm1 = new Form1(obj);
                     frm1.Show();
                     this.Hide();
@@ -197,7 +216,5 @@ namespace Solucao.views
             }
         }
         #endregion
-
-
     }
 }
